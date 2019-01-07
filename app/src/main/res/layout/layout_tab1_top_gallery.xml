@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_content"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <fm.dian.hdui.view.MyGallery
+            android:id="@+id/gl_banners"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:spacing="0dp" />
+
+        <!-- <RadioGroup -->
+        <!-- android:id="@+id/gallery_radioGroup" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentBottom="true" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:gravity="right|center_vertical" -->
+        <!-- android:orientation="horizontal" -->
+        <!-- android:paddingRight="15dip" > -->
+        <!-- </RadioGroup> -->
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tab1_banner_close_bg_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

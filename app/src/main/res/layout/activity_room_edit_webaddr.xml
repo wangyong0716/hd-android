@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HDRoomActivity" 
+    android:background="#F3F3F0">
+    
+    <RelativeLayout 
+        android:id="@+id/bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/action_bar_bg_color">
+	    <ImageButton
+	        android:id="@+id/back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true" 
+	        android:background="@drawable/btn_back_bg_selector" 
+	        android:onClick="back"/>
+	    
+	    <View 
+	        android:id="@+id/divider"
+	        android:layout_width="1dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/activity_action_bar_divider_padding"
+	        android:layout_marginBottom="@dimen/activity_action_bar_divider_padding"
+	        android:layout_marginRight="@dimen/activity_common_padding"
+	        android:background="@color/action_bar_vertical_divider"
+	        android:layout_toRightOf="@id/back"
+	        android:layout_alignTop="@id/back"
+	        android:layout_alignBottom="@id/back"
+	        />
+	    
+	    <Button
+	        android:id="@+id/editBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true" 
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:text="保存"
+	        android:textColor="@color/color_white"
+	        android:textSize="13sp"
+	        android:background="@drawable/room_edit_btn_bg_selector" 
+	        android:onClick="edit"
+	        />
+	    
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="修改频道号、频道地址"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/room_name_size" 
+	        android:layout_toLeftOf="@id/editBtn"
+	        android:layout_toRightOf="@id/divider"
+	        android:layout_alignTop="@id/back"
+	        android:layout_alignBottom="@id/back"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        />
+	    
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/r1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:layout_below="@id/bar"
+	    >
+    
+	    <EditText
+	        android:id="@+id/v"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginRight="16dp"
+	        android:textColor="@color/color_black"
+	        android:textSize="16sp"
+	        android:background="#00000000"
+	        android:text="@string/app_name"
+	        android:gravity="bottom"
+	        android:paddingLeft="8dp"
+	        android:paddingBottom="4dp"
+	        android:maxLength="20"
+	        android:visibility="invisible"
+	        >
+	    </EditText>
+	    
+	    <TextView 
+	        android:id="@+id/v21"
+	        android:layout_width="86dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@id/v"
+	        android:layout_alignBottom="@id/v"
+	        android:textSize="16sp"
+	        android:textColor="#808080"
+	        android:gravity="bottom"
+	        android:paddingLeft="8dp"
+	        android:paddingBottom="4dp"
+	        android:background="#00000000"
+	        android:text="频道号"
+	        />
+	    
+	    <EditText
+	        android:id="@+id/roomWebaddr"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/v21"
+	        android:layout_alignTop="@id/v21"
+	        android:layout_marginRight="16dp"
+	        android:textColor="@color/color_black"
+	        android:textSize="16sp"
+	        android:background="#00000000"
+	        android:text="1111"
+	        android:gravity="bottom"
+	        android:paddingBottom="4dp"
+	        android:maxLength="20"
+	        android:singleLine="true"
+	        >
+		    <requestFocus />
+	    </EditText>
+		
+	    <View 
+	        android:id="@+id/v1"
+	        android:layout_width="1dp"
+	        android:layout_height="6dp"
+	        android:layout_alignLeft="@id/v"
+	        android:layout_alignBottom="@id/v"
+	        android:background="#E66C61"
+	        />
+	    
+	    <View 
+	        android:id="@+id/v2"
+	        android:layout_width="1dp"
+	        android:layout_height="6dp"
+	        android:layout_alignRight="@id/v"
+	        android:layout_alignBottom="@id/v"
+	        android:background="#E66C61"
+	        />
+	    
+	    <View 
+	        android:id="@+id/v3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="1dp"
+	        android:layout_alignLeft="@id/v"
+	        android:layout_alignRight="@id/v"
+	        android:layout_alignBottom="@id/v"
+	        android:background="#E66C61"
+	        />
+    
+	</RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/r2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:layout_below="@id/r1"
+	    >
+    
+	    <EditText
+	        android:id="@+id/vv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginRight="16dp"
+	        android:textColor="@color/color_black"
+	        android:textSize="16sp"
+	        android:background="#00000000"
+	        android:text="@string/app_name"
+	        android:gravity="bottom"
+	        android:paddingLeft="8dp"
+	        android:paddingBottom="4dp"
+	        android:maxLength="20"
+	        android:visibility="invisible"
+	        >
+	    </EditText>
+	    
+	    <TextView 
+	        android:id="@+id/vv21"
+	        android:layout_width="86dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@id/vv"
+	        android:layout_alignBottom="@id/vv"
+	        android:textSize="16sp"
+	        android:textColor="#808080"
+	        android:gravity="bottom"
+	        android:paddingLeft="8dp"
+	        android:paddingBottom="4dp"
+	        android:background="#00000000"
+	        android:text="频道地址"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/roomWebaddr3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/vv21"
+	        android:layout_alignTop="@id/vv21"
+	        android:textSize="16sp"
+	        android:textColor="#808080"
+	        android:gravity="bottom"
+	        android:paddingBottom="4dp"
+	        android:background="#00000000"
+	        android:text="dian.fm/"
+	        />
+	    
+	    <EditText
+	        android:id="@+id/roomWebaddr2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/roomWebaddr3"
+	        android:layout_alignTop="@id/vv21"
+	        android:layout_marginRight="16dp"
+	        android:textColor="@color/color_black"
+	        android:textSize="16sp"
+	        android:background="#00000000"
+	        android:text="1111"
+	        android:gravity="bottom"
+	        android:paddingBottom="4dp"
+	        android:maxLength="20"
+	        android:singleLine="true"
+	        >
+		    <requestFocus />
+	    </EditText>
+		
+	    <View 
+	        android:id="@+id/vv1"
+	        android:layout_width="1dp"
+	        android:layout_height="6dp"
+	        android:layout_alignLeft="@id/vv"
+	        android:layout_alignBottom="@id/vv"
+	        android:background="#E66C61"
+	        />
+	    
+	    <View 
+	        android:id="@+id/vv2"
+	        android:layout_width="1dp"
+	        android:layout_height="6dp"
+	        android:layout_alignRight="@id/vv"
+	        android:layout_alignBottom="@id/vv"
+	        android:background="#E66C61"
+	        />
+	    
+	    <View 
+	        android:id="@+id/vv3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="1dp"
+	        android:layout_alignLeft="@id/vv"
+	        android:layout_alignRight="@id/vv"
+	        android:layout_alignBottom="@id/vv"
+	        android:background="#E66C61"
+	        />
+    
+	</RelativeLayout>
+	
+    <TextView 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_below="@id/r2"
+	    android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"
+        android:textColor="#B2B2B2"
+        android:textSize="13sp"
+        android:text="只支持4-20个字母、数字"
+        />
+    
+</RelativeLayout>

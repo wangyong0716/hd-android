@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fm.dian.ui.MainActivity" >
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/app_icon"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

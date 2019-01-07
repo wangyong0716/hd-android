@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <EditText
+            android:id="@+id/et_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:enabled="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginTop="@dimen/act_login_et_margin_top"
+            android:layout_marginLeft="@dimen/act_login_et_margin_left_right"
+            android:layout_marginRight="@dimen/act_login_et_margin_left_right"
+            android:background="@drawable/et_common_bg_selector"
+            android:drawableLeft="@drawable/et_left_drawable_phone_tan"
+            android:paddingLeft="@dimen/act_login_et_padding_left"
+            android:text="中国（86）v"
+            android:inputType="phone"
+            android:textColor="@color/act_login_et_text_color"
+            android:textColorHint="@color/act_login_et_text_hint_color"
+            android:textSize="@dimen/text_size_common" />
+        
+        
+		<EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/act_login_et_margin_top"
+            android:layout_marginLeft="@dimen/act_login_et_margin_left_right"
+            android:layout_marginRight="@dimen/act_login_et_margin_left_right"
+            android:background="@drawable/et_common_bg_selector"
+            android:drawableLeft="@drawable/et_left_drawable_phone_tan"
+            android:paddingLeft="@dimen/act_login_et_padding_left"
+            android:hint="@string/act_login_phone_num"
+            android:inputType="phone"
+            android:textColor="@color/act_login_et_text_color"
+            android:textColorHint="@color/act_login_et_text_hint_color"
+            android:textSize="@dimen/text_size_common" />
+        
+         
+		<EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/act_login_et_margin_top"
+            android:layout_marginLeft="@dimen/act_login_et_margin_left_right"
+            android:layout_marginRight="@dimen/act_login_et_margin_left_right"
+            android:background="@drawable/et_common_bg_selector"
+            android:hint="@string/act_login_password"
+            android:paddingLeft="@dimen/act_login_et_padding_left"
+            android:drawableLeft="@drawable/et_left_drawable_pwd"
+            android:textColor="@color/act_login_et_text_color"
+            android:textColorHint="@color/act_login_et_text_hint_color"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size_common" />
+		
+		
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <EditText -->
+<!--                 android:id="@+id/et_code" -->
+<!--                 android:layout_width="0dip" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="2.0" -->
+<!--                 android:background="@drawable/et_common_bg_selector" -->
+<!--                 android:hint="@string/act_login_code" -->
+<!--                 android:textSize="@dimen/text_size_common" /> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/btn_get_code" -->
+<!--                 android:layout_width="0dip" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1.0" -->
+<!--                 android:text="@string/act_login_code" /> -->
+<!--         </LinearLayout> -->
+    </LinearLayout>
+
+</RelativeLayout>

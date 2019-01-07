@@ -1,0 +1,10 @@
+gradlew
+gradlew.bat
+/gradle
+/.gradle
+local.properties
+/.idea
+.DS_Store
+/build
+hd-android.iml
+app/app.iml

@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_page"
+    android:background="#FFF" >
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:layout_marginBottom="40dip"
+        android:horizontalSpacing="3dip"
+        android:verticalSpacing="3dip"
+        android:numColumns="4" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/rl_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_listview_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alpha="0.7"
+            android:background="#000" />
+
+        <ListView
+            android:id="@+id/lv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingTop="5dip"
+            android:layout_marginTop="50dip"
+            android:layout_alignParentBottom="true"
+            android:background="#FFF"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/choose_activity_bottom_bg">
+        
+        <TextView
+            android:id="@+id/tv_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:text="aaa"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dip"
+            android:drawableRight="@drawable/checked_bg_selector"
+            android:textStyle="bold"
+            android:textColor="@color/color_red" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

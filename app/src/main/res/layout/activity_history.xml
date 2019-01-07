@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab3_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:padding="2dip"
+        android:background="@drawable/item_top_bottom_full_line"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_unpub"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_history_title_tab_checked_selector"
+            android:textColor="@color/chat_room_recording_bar"
+            android:gravity="center"
+            android:text="未发布" />
+
+        <TextView
+            android:id="@+id/tv_pub"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1dip"
+            android:background="@color/color_white"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="已发布"
+            android:textColor="@color/color_black" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/color_transparency"
+        android:divider="@color/color_listview_divider"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+</LinearLayout>

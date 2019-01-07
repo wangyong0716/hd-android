@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/ll_pop_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/chat_room_gl_stage_bg_color"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:indeterminateOnly="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="2dip"
+        android:text="fadsfa"
+        android:maxLines="7"
+        android:lineSpacingExtra="3dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color_white"
+        android:background="@color/chat_room_gl_stage_bg_color"
+        android:gravity="center"
+        android:textSize="18sp"
+    	android:padding="0dip"/>
+
+</RelativeLayout>

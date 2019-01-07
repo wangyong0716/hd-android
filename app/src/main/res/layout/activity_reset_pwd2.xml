@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="@dimen/activity_common_padding"
+            android:text="@string/act_reset_echo_phone_num"
+            android:textColor="#bdbdbc" />
+
+        <TextView
+            android:id="@+id/tv_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:contentDescription="@string/app_name"
+            android:textColor="#2b9dfe" />
+    </LinearLayout>
+
+    
+  		<EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/act_login_et_margin_top"
+            android:layout_marginLeft="@dimen/act_login_et_margin_left_right"
+            android:layout_marginRight="@dimen/act_login_et_margin_left_right"
+            android:background="@drawable/et_common_bg_selector"
+        	android:hint="@string/act_reset_input_code"
+            android:paddingLeft="@dimen/act_login_et_padding_left"
+            android:textColor="@color/act_login_et_text_color"
+        	android:inputType="number"
+            android:textColorHint="@color/act_login_et_text_hint_color"
+            android:textSize="@dimen/text_size_common" />
+  
+    <Button
+        android:id="@+id/btn_send_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dip"
+        android:background="@drawable/btn_common_white_bg"
+        android:text="@string/act_reset_resend_code"
+        android:textSize="@dimen/text_size_common" 
+        android:textColor="@color/color_grey"/>
+
+</LinearLayout>

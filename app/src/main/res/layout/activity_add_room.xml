@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_transparent_half"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_transparency"
+        android:cacheColorHint="@color/color_transparency"
+        android:divider="@color/color_tan"
+        android:dividerHeight="2px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+    android:background="@drawable/tab3_item_bg_selector"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip">
+
+    <fm.dian.hdui.view.RoundAngleImageView
+        android:id="@+id/iv_live_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:adjustViewBounds="true"
+        android:background="@drawable/default_image_load_fail_user"
+        android:scaleType="centerCrop"
+        android:src="@drawable/channel_act_offline_room"
+        app:roundHeight="4dp"
+        app:roundWidth="4dp" />
+
+    <TextView
+        android:id="@+id/tv_live_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="30dip"
+        android:layout_toRightOf="@id/iv_live_icon"
+        android:drawablePadding="10dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_online_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:drawableRight="@drawable/right_arrow_bg"
+        android:contentDescription="@string/app_name"/>
+
+</RelativeLayout>

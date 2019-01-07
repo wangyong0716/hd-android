@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 边框填充的颜色 -->
+    <solid android:color="#595d5f" />
+    <!-- 设置进度条的四个角为弧形 -->
+    <!-- android:radius 弧形的半径 -->
+    <corners android:radius="5dip" />
+
+    <!-- padding：边界的间隔 这里的padding存在适配问题，有些设备进度条宽度会变窄 -->
+<!--     <padding -->
+<!--         android:bottom="2dip" -->
+<!--         android:top="2dip" /> -->
+
+    <stroke
+        android:width="1dip"
+        android:color="#FFF" />
+
+</shape>

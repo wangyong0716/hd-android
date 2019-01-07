@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="76dip"
+    android:background="@color/color_white"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical">
+
+    <fm.dian.hdui.view.RoundAngleImageView
+        android:id="@+id/iv_user_icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="15dip"
+        android:adjustViewBounds="true"
+        android:background="@drawable/default_image_load_fail_user"
+        android:gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image_load_fail_user"
+        app:roundHeight="8dp"
+        app:roundWidth="8dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tab3_margin_left"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/iv_user_icon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:maxLines="6"
+            android:text="马腾飞马腾"
+            android:textSize="18sp"
+            android:textColor="@color/tab3_user_name_text_color" />
+
+        <TextView
+            android:id="@+id/tv_user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:textSize="12sp"
+            android:background="@drawable/drawable_color_yellow"
+            android:text="管理员"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/tv_user_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="2dp"
+            android:drawableRight="@drawable/activity_online_gender_man"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_user_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/ll_user_name"
+        android:layout_marginLeft="@dimen/tab3_margin_left"
+        android:layout_toRightOf="@id/iv_user_icon"
+        android:textColor="@color/tab3_user_des_text_color"
+        android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tv_last_item"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:visibility="gone"
+	        android:padding="30dp"
+	        android:background="#f3f3f0"
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:textColor="#737373"
+	        android:textSize="16sp" />
+</RelativeLayout>

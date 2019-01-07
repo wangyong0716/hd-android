@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main_act"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#f3f3f0"
+    android:orientation="vertical" >
+
+    <fm.dian.hdui.view.pullllayout.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <fm.dian.hdui.view.indexlistview.IndexableListView
+            android:id="@+id/lv_member"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3f3f0"
+            android:cacheColorHint="@color/color_transparency"
+            android:divider="@color/color_tan"
+            android:dividerHeight="2px" />
+    </fm.dian.hdui.view.pullllayout.PullRefreshLayout>
+
+</LinearLayout>

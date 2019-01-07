@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_tab1_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_white">
+
+    <fm.dian.hdui.view.pullllayout.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fm.dian.hdui.view.stickyHeader.ui.PinnedSectionListView
+            android:id="@+id/mListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:cacheColorHint="@color/color_transparency"
+            android:choiceMode="singleChoice"
+            android:divider="@color/color_listview_divider"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="false"
+            android:drawSelectorOnTop="true"
+            android:listSelector="@color/color_transparency"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none" />
+
+
+    </fm.dian.hdui.view.pullllayout.PullRefreshLayout>
+
+</RelativeLayout>

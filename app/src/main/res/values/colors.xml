@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_red">#F00</color>
+    <color name="color_yellow">#ec9f45</color>
+    <color name="color_black">#000</color>
+    <color name="color_tan">#eee</color>
+    <color name="color_white">#FFF</color>
+    <color name="color_grey">#535353</color>
+    <color name="color_gold">#b89766</color>    
+    <color name="color_cover_level">#80000000</color>
+
+    <color name="color_transparency">#00000000</color>
+    <color name="color_transparent_half">#9000</color>
+    <color name="color_base_tab_bg">#ffccff</color>
+    <color name="color_blue">#00F</color>
+    <color name="color_listview_divider">#e0e1e1</color>
+    <color name="actionbar_transparent_half">#70ffffff</color>
+
+    <!-- 上麦后的红色 -->
+    <color name="bottomRecordStateColor">#ec5545</color>
+
+<!--     全局 -->
+	<color name="action_bar_bg_color">#303537</color>
+	<color name="action_bar_pop_divider_bg_color">#222526</color>
+	<color name="action_bar_vertical_divider">#222526</color>
+	<color name="base_activity_seeding_bar_text_color">#474747</color>
+	<color name="base_activity_bottom_bg">#a8a8a8</color>
+    
+<!-- 	tab1 -->
+	<color name="tab1_list_item_room_name_text_color">#474747</color>
+	<color name="tab1_list_item_room_describe_text_color">#989898</color>
+	<color name="tab1_list_item_room_online_number_text_color">#989898</color>
+
+<!-- 	tab3 -->
+	<color name="tab3_bg_color">#f3f3f0</color>
+	<color name="tab3_user_name_text_color">#474747</color>
+	<color name="tab3_user_des_text_color">#989898</color>
+	
+<!-- 	聊天页面 -->
+	<color name="chat_room_bg_color">#dfdfde</color>
+	<color name="chat_room_bottom_bar_bg_color">#fefefe</color>
+	<color name="chat_room_gl_stage_bg_color">#303537</color>
+	<color name="chat_room_recording_bar">#e76355</color>
+    
+<!-- 	 登录页面 -->	
+	<color name="act_login_et_text_color">#474747</color>
+	<color name="act_login_et_text_hint_color">#c5c5c5</color>
+	<color name="act_login_btn_text_color_unable">#bdbdbc</color>
+	<color name="act_login_forget_pwd_text_color">#2b9dfe</color>
+    
+<!-- 	pull layout -->
+	<color name="orange">#ff9800</color>
+    <color name="pink">#f06292</color>
+    <color name="green">#259b24</color>
+    <color name="blue">#5677fc</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="red">#FFC93437</color>
+<!--     选择图片 -->
+    <color name="choose_image_listview_item_bg">#f3f3f3</color>
+    <!--webview 页面-->
+    <color name="http_url_text_color">#006699</color>
+
+    
+<!--  ####################################################################################  -->
+    
+    <color name="room_follow_btn_bg_1">#00000000</color>
+    <color name="room_follow_btn_bg_2">#1A000000</color> 
+    <color name="room_more_item_bg_2">#26292A</color> 
+    <color name="room_share_cancel_btn_bg_1">#F8F8F8</color> 
+    <color name="room_share_cancel_btn_bg_2">#D8D8D8</color> 
+    
+    
+</resources>

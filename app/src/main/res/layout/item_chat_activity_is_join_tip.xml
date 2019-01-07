@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_is_add_mark_tip"
+    android:visibility="gone"
+    android:background="@color/color_tan" >
+
+    <ImageView
+        android:id="@+id/iv_seeding_bar_room_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" 
+		android:background="@drawable/app_icon" 
+		android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/iv_seeding_bar_room_icon"
+        android:text="您还未订阅该频道"
+        android:textSize="14sp" />
+
+      <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" 
+        android:layout_marginRight="5dip"
+        android:background="@drawable/chat_activity_btn_cancel_bg_selector" />
+
+      <Button
+        android:id="@+id/btn_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_cancel"
+        android:background="@drawable/chat_activity_btn_join_bg_selector" />
+</RelativeLayout>

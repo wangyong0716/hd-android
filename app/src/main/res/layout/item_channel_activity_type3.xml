@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_contentview"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_create_live"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:visibility="gone"
+        android:background="@drawable/item_top_bottom_full_line_selector">
+        <TextView
+            android:id="@+id/tv_create_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/channel_act_add_icon_blue"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dip"
+            android:singleLine="true"
+            android:text="新房间"
+            android:textColor="#0095f4"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_history"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_top_bottom_full_line_selector"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dip"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip">
+
+        <fm.dian.hdui.view.RoundAngleImageView
+            android:id="@+id/iv_seeding_bar_room_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/channel_act_common_item_icon"
+            app:roundHeight="4dp"
+            app:roundWidth="4dp" />
+
+        <TextView
+            android:id="@+id/tv_seeding_bar_room_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="30dip"
+            android:layout_toRightOf="@id/iv_seeding_bar_room_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="节目"
+            android:textColor="@color/base_activity_seeding_bar_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_seeding_bar_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/right_arrow_bg"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_seeding_bar_room_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="30dip"
+            android:layout_toLeftOf="@id/iv_seeding_bar_close"
+            android:drawablePadding="5dip"
+            android:drawableRight="@drawable/d1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/base_activity_seeding_bar_text_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

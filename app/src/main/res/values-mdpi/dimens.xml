@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="test">2dp</dimen>
+
+    <dimen name="action_bar_btn_margin_right">10dp</dimen>
+    <dimen name="action_bar_btn_text_pading_left_right">10dp</dimen>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="activity_action_bar_divider_padding">10dp</dimen>
+    <dimen name="activity_login_btn_margin">10dp</dimen>
+    <dimen name="activity_login_btn_between">20dp</dimen>
+    <dimen name="activity_title_height">50dp</dimen>
+    <dimen name="activity_no_margin">0dp</dimen>
+    <dimen name="activity_common_margin">20dp</dimen>
+    <dimen name="activity_common_padding">15dp</dimen>
+    <dimen name="activity_pop_add_room_txt_padding">30dp</dimen>
+    <dimen name="activity_pop_add_room_window_padding">10dp</dimen>
+    <dimen name="text_size_common">16dp</dimen>
+    <dimen name="text_size_title">18dp</dimen>
+    <dimen name="text_size_dialog">16sp</dimen>
+    <dimen name="bottom_tab_padding_drawable">1.0dip</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="bottom_tab_font_size">14.0dip</dimen>
+    <!-- padding值越大bottom bar 上边的分割线越细 -->
+<!--     <dimen name="bottom_tab_padding_up">4.0dip</dimen> -->
+ 
+    
+<!--     导航页面 -->
+	<dimen name="activity_navigation_logo_bottom_margin">10dip</dimen>
+	<dimen name="activity_navigation_button_padding_topBottom">10dip</dimen>
+	<dimen name="activity_navigation_button_padding_leftRight">30dip</dimen>
+	
+<!-- 	登录页面 -->
+	<dimen name="act_login_et_padding_left">10dp</dimen>
+	<dimen name="act_login_et_margin_top">15dp</dimen>
+	<dimen name="act_login_et_margin_left_right">10dp</dimen>
+	<dimen name="act_login_btn_login_margin_top">15dp</dimen>
+	<dimen name="act_login_btn_login_margin_left_right">10dp</dimen>
+	<dimen name="act_login_tv_forget_pwd_margin_top">10dp</dimen>
+	<dimen name="act_login_tv_login_text_size">18sp</dimen>
+	
+	
+<!-- 	注册页面 -->
+    
+<!--  ####################################################################################  -->
+ 
+	<dimen name="room_name_size">14sp</dimen>
+	
+	<dimen name="room_avatar_marginTop">16dp</dimen>
+	<dimen name="room_avatar_marginBottom">16dp</dimen>
+	<dimen name="room_avatar_marginLeft">15dp</dimen>
+	<dimen name="room_avatar_marginRight">16dp</dimen>
+
+	<dimen name="room_name_marginTop">28dp</dimen>
+	<dimen name="room_webaddr_marginTop">8dp</dimen>
+	
+	<dimen name="room_more_item_width">160dp</dimen>
+
+</resources>

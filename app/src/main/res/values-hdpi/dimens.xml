@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="test">10dp</dimen>
+    <dimen name="bottom_tab_padding_up">5dip</dimen>
+        
+    <dimen name="tab3_item1_height">90dp</dimen>
+    <dimen name="tab3_item1_user_icon_height">75dp</dimen>
+    <dimen name="tab3_item2_height">50dp</dimen>
+    <dimen name="tab3_item2_text_top">3dp</dimen>
+    <dimen name="tab3_margin_left">15dp</dimen>
+<!--     <dimen name="tab3_margin_top">5dp</dimen> -->
+     <dimen name="face_height">20dp</dimen>
+
+        
+<!--  ####################################################################################  -->
+ 
+</resources>

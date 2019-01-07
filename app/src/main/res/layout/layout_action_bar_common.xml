@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/action_bar_bg_color"
+    android:gravity="center_vertical" >
+
+    <ImageButton
+        android:id="@+id/ib_action_bar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_back_bg_selector" />
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="2px"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_action_bar_divider_padding"
+        android:layout_marginRight="@dimen/activity_common_padding"
+        android:layout_marginTop="@dimen/activity_action_bar_divider_padding"
+        android:layout_toRightOf="@id/ib_action_bar_left"
+        android:background="@color/action_bar_vertical_divider" />
+
+    <TextView
+        android:id="@+id/tv_action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/v_divider"
+        android:gravity="center|center_vertical"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginRight="40dip"
+        android:layout_centerVertical="true"
+        android:text="@string/app_name"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_title" />
+
+    <TextView
+        android:id="@+id/tv_common_action_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:gravity="center|center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:textColor="@color/color_white"
+	    android:background="@drawable/btn_add_bg_selector" />
+
+</RelativeLayout>

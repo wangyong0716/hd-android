@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <ImageButton
+        android:id="@+id/ib_action_bar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" 
+        android:background="@drawable/btn_back_bg_selector" />
+
+    
+    <View 
+        android:id="@+id/v_divider"
+        android:layout_width="2px"
+        android:layout_marginTop="@dimen/activity_action_bar_divider_padding"
+        android:layout_marginBottom="@dimen/activity_action_bar_divider_padding"
+        android:layout_marginRight="@dimen/activity_common_padding"
+        android:layout_toRightOf="@id/ib_action_bar_left"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        android:background="@color/action_bar_vertical_divider"/>
+    
+    
+        <ImageButton
+        android:id="@+id/ib_action_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" 
+        android:background="@drawable/btn_add_bg_selector" />
+        
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/v_divider" 
+        android:layout_toLeftOf="@id/ib_action_bar_right"
+        android:layout_marginRight="10dip"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_common" />
+
+        <TextView
+            android:id="@+id/tv_action_bar_title_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_action_bar_title"
+            android:text="@string/app_name"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/bottom_tab_font_size" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_action_bar_title"
+            android:layout_marginTop="1dp"
+            android:text=" "
+            android:layout_toRightOf="@id/tv_action_bar_title_sub"
+			android:drawableRight="@drawable/btn_arrow_down_bg_selector"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

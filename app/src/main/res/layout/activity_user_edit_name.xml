@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HDRoomActivity" 
+    android:background="#F3F3F0">
+    
+    <RelativeLayout 
+        android:id="@+id/bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/action_bar_bg_color">
+	    <ImageButton
+	        android:id="@+id/back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true" 
+	        android:background="@drawable/btn_back_bg_selector" 
+	        android:onClick="back"/>
+	    
+	    <View 
+	        android:id="@+id/divider"
+	        android:layout_width="1dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/activity_action_bar_divider_padding"
+	        android:layout_marginBottom="@dimen/activity_action_bar_divider_padding"
+	        android:layout_marginRight="@dimen/activity_common_padding"
+	        android:background="@color/action_bar_vertical_divider"
+	        android:layout_toRightOf="@id/back"
+	        android:layout_alignTop="@id/back"
+	        android:layout_alignBottom="@id/back"
+	        />
+	    
+	    <Button
+	        android:id="@+id/editBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true" 
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:text="保存"
+	        android:textColor="@color/color_white"
+	        android:textSize="13sp"
+	        android:background="@drawable/room_edit_btn_bg_selector" 
+	        android:onClick="save"
+	        />
+	    
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="修改姓名"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/room_name_size" 
+	        android:layout_toLeftOf="@id/editBtn"
+	        android:layout_toRightOf="@id/divider"
+	        android:layout_alignTop="@id/back"
+	        android:layout_alignBottom="@id/back"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        />
+	    
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/bar"
+        android:textColor="@color/color_black"
+        android:textColorHint="#808080"
+        android:textSize="16sp"
+        android:background="@drawable/room_et_bg_selector"
+        android:hint="请输入姓名"
+      	android:maxLength="15"
+        >
+	    <requestFocus />
+    </EditText>
+		
+	
+</RelativeLayout>

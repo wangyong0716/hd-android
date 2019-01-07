@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="55dip" >
+
+    <RelativeLayout
+        android:id="@+id/rl_seeding_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/color_tan"
+        android:gravity="center_vertical"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        tools:ignore="UselessParent" >
+
+        <fm.dian.hdui.view.RoundAngleImageView
+            android:id="@+id/iv_seeding_bar_room_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/default_image_load_fail_user"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image_load_fail_user"
+            app:roundHeight="4dp"
+            app:roundWidth="4dp" />
+
+        <TextView
+            android:id="@+id/tv_seeding_bar_room_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="50dip"
+            android:layout_toRightOf="@id/iv_seeding_bar_room_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/base_activity_seeding_bar_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_seeding_bar_close"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingRight="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/btn_tab1_seeding_room_close_bg_selector"
+            android:contentDescription="@string/app_name"/>
+    </RelativeLayout>
+
+</RelativeLayout>

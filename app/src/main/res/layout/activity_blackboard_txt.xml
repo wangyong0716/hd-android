@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdfde">
+
+    <EditText
+        android:id="@+id/et_blackboard_txt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:background="@color/color_white"
+        android:gravity="top|left"
+        android:inputType="none"
+        android:lines="8"
+        android:textSize="14sp"
+        android:padding="15dip" />
+
+</RelativeLayout>

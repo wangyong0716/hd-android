@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_base_tab_contianer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/console_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/chat_activity_bottom_bg"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <RadioButton
+                android:id="@+id/main_tab_index"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:drawableTop="@drawable/rb_tab1_selector"
+                android:text="@string/act_base_tab_1" />
+
+            <RadioButton
+                android:id="@+id/main_tab_hongdian"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/rb_tab2_selector"
+                android:text="@string/act_base_tab_2" />
+
+            <RadioButton
+                android:id="@+id/main_tab_me"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/rb_tab3_selector"
+                android:text="@string/act_base_tab_4" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <fm.dian.hdui.view.FixedViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/console_line_bottom"
+        android:paddingTop="0dp" />
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/simple_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+</RelativeLayout>

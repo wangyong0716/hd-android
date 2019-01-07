@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_white" >
+
+    <fm.dian.hdui.view.pullllayout.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+ 
+        <fm.dian.hdui.view.stickyHeader.ui.PinnedSectionListView
+            android:id="@+id/mListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:cacheColorHint="@color/color_transparency"
+            android:divider="@color/color_listview_divider"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="false"
+            android:fadingEdge="none"
+            android:listSelector="@color/color_transparency"/>
+    </fm.dian.hdui.view.pullllayout.PullRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dip"
+    android:background="@color/color_white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_vedio_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="120dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/base_activity_seeding_bar_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="15dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/tab1_list_item_room_describe_text_color"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_play_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:drawableLeft="@drawable/icon_blackborad_play_count"
+                android:text="0"
+                android:textColor="@color/tab1_list_item_room_describe_text_color" />
+
+            <TextView
+                android:id="@+id/tv_vedio_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_blackborad_vedio_length"
+                android:textColor="@color/tab1_list_item_room_describe_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_pub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_history_activity_publish_selector"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_history_activity_more_selector"
+            android:clickable="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

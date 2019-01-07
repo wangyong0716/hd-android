@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:gravity="center" >
+    
+    <TextView
+        android:id="@+id/tv_nobody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/item_stage_nobody_bg"
+        android:text="麦上没人"
+        android:paddingLeft="50dip"
+        android:paddingRight="50dip"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip"
+        android:textColor="@color/color_grey"
+        android:textSize="13sp"/>
+
+</RelativeLayout>

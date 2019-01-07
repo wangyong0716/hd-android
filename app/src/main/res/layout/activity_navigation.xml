@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ec5446" >
+
+ <ImageView
+     android:id="@+id/iv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"/>
+ 
+    <ImageView
+        android:id="@+id/iv_logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/navigation_activity_name"
+        android:contentDescription="@string/app_name"
+        android:padding="5dip" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_navigation_logo_bottom_margin"
+        android:layout_above="@id/iv_logo_name"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/navigation_activity_icon"
+        android:contentDescription="@string/app_name"
+        android:padding="5dip" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_navigation_logo_bottom_margin"
+        android:layout_below="@id/iv_logo_name"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/beta_apk_icon"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name" />
+    
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_common_margin"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_common_padding" >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_login_red_selector"
+			android:paddingTop="@dimen/activity_navigation_button_padding_topBottom"
+			android:paddingBottom="@dimen/activity_navigation_button_padding_topBottom"
+			android:textSize="@dimen/act_login_tv_login_text_size"
+            android:text="@string/act_splash_login" 
+            android:textColor="@color/color_white"/>
+
+        <View
+            android:layout_width="@dimen/activity_common_padding"
+            android:layout_height="0dip" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+			android:paddingTop="@dimen/activity_navigation_button_padding_topBottom"
+			android:paddingBottom="@dimen/activity_navigation_button_padding_topBottom"
+			android:textSize="@dimen/act_login_tv_login_text_size"
+            android:background="@drawable/btn_login_white_selector"
+            android:text="@string/act_splash_register" 
+            android:textColor="@color/color_red"/>
+    </LinearLayout>
+
+</RelativeLayout>

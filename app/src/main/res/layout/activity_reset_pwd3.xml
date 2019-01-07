@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/act_login_et_margin_left_right"
+        android:layout_marginRight="@dimen/act_login_et_margin_left_right"
+        android:layout_marginTop="@dimen/act_login_et_margin_top"
+        android:background="@drawable/et_common_bg_selector"
+        android:drawableLeft="@drawable/et_left_drawable_pwd"
+        android:hint="@string/act_reset_new_pwd"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/act_login_et_padding_left"
+        android:textColor="@color/act_login_et_text_color"
+        android:textColorHint="@color/act_login_et_text_hint_color"
+        android:textSize="@dimen/text_size_common" />
+
+    <EditText
+        android:id="@+id/et_new_pwd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/act_login_et_margin_left_right"
+        android:layout_marginRight="@dimen/act_login_et_margin_left_right"
+        android:layout_marginTop="@dimen/act_login_et_margin_top"
+        android:background="@drawable/et_common_bg_selector"
+        android:drawableLeft="@drawable/et_left_drawable_pwd"
+        android:hint="@string/act_reset_new_pwd2"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/act_login_et_padding_left"
+        android:textColor="@color/act_login_et_text_color"
+        android:textColorHint="@color/act_login_et_text_hint_color"
+        android:textSize="@dimen/text_size_common" />
+
+</LinearLayout>

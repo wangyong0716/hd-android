@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:paddingBottom="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/tip_chat_listview_time"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:textColor="@color/color_white"
+        android:textSize="10sp" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rl_me"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/color_transparency"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <fm.dian.hdui.view.RoundAngleImageView
+            android:id="@+id/iv_userhead_me"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/default_image_load_fail_user"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_image_load_fail_user"
+            app:roundHeight="4dp"
+            app:roundWidth="4dp" />
+
+        <TextView
+            android:id="@+id/tv_chatcontent_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_userhead_me"
+            android:background="@drawable/tip_chat_activity_right_bg_selector"
+            android:gravity="left|center"
+            android:lineSpacingExtra="2dp"
+            android:textSize="14sp"
+            android:textColor="@color/color_white" />
+
+    </RelativeLayout>
+</LinearLayout>

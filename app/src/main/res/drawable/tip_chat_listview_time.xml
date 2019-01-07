@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#c4c4c3" />
+            <corners android:radius="2dip" />
+            <!-- padding：Button里面的文字与Button边界的间隔 -->
+            <padding android:bottom="2dp" android:left="10dp" android:right="10dp" android:top="2dp" />
+        </shape>
+   </item>
+
+</selector>
+
+<!-- 注：颜色和不透明度 (alpha) 值以十六进制表示法表示。任何一种颜色的值范围都是 0 到 255（00 到 ff）。对于 alpha，00 表示完全透明， -->
+<!-- ff 表示完全不透明。表达式顺序是“aabbggrr”，其中“aa=alpha”（00 到 ff）；“bb=blue”（00 到 ff）；“gg=green”（00 到 ff)；“rr=red”（00 到 ff）。 -->
+<!-- 注：颜色可以在下边地址寻找，前边加两位（aa）表示透明度即可 -->
+<!-- http://blog.sina.com.cn/s/blog_684a1d160100umuq.html -->

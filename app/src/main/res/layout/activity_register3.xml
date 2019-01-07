@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F0" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bar"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp" >
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center" >
+
+                <fm.dian.hdui.view.RoundAngleImageView
+                    android:id="@+id/iv_user_icon"
+                    android:layout_width="75dip"
+                    android:layout_height="75dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/room_avatar_btn_bg_selector"
+                    app:roundHeight="8dp"
+                    app:roundWidth="8dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/act_login_et_margin_left_right"
+                android:layout_marginRight="@dimen/act_login_et_margin_left_right"
+                android:layout_marginTop="@dimen/act_login_et_margin_top"
+                android:background="@drawable/et_common_bg_selector"
+                android:hint="请填写姓名"
+                android:paddingLeft="@dimen/act_login_et_padding_left"
+                android:textColor="@color/act_login_et_text_color"
+                android:textColorHint="@color/act_login_et_text_hint_color"
+                android:textSize="@dimen/text_size_common" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/act_login_et_margin_left_right"
+                android:layout_marginRight="@dimen/act_login_et_margin_left_right"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/et_common_bg_selector"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_man"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:clickable="true"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="男" />
+
+                    <TextView
+                        android:id="@+id/tv_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/rb_sex_checked" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="15dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="#b3b3b3" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_woman"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:clickable="true"
+                    android:focusable="true" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="女" />
+
+                    <TextView
+                        android:id="@+id/tv_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/rb_sex_uncheck" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_user_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/act_login_et_margin_left_right"
+                android:layout_marginRight="@dimen/act_login_et_margin_left_right"
+                android:layout_marginTop="@dimen/act_login_et_margin_top"
+                android:background="@drawable/et_common_bg_selector"
+                android:hint="请填写个性签名"
+                android:paddingLeft="@dimen/act_login_et_padding_left"
+                android:textColor="@color/act_login_et_text_color"
+                android:textColorHint="@color/act_login_et_text_hint_color"
+                android:textSize="@dimen/text_size_common" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

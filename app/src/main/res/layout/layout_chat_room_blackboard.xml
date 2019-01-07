@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fm.dian.hdui.view.blackboard.BlackboardRelativeLayoutTop
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_blackboard"
+    android:layout_width="fill_parent"
+    android:layout_height="215dip" >
+
+    <RelativeLayout
+        android:id="@+id/rl_blackboard_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    <fm.dian.hdui.view.MyGallery
+        android:id="@+id/mGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:padding="0dip"
+        android:spacing="0dip"
+        android:unselectedAlpha="1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_dots_and_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal" >
+
+        <fm.dian.hdui.view.DotsIndicator
+            android:id="@+id/dotsIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="15dip" >
+        </fm.dian.hdui.view.DotsIndicator>
+
+        <ImageView
+            android:id="@+id/iv_dot_left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/dotsIndicator"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="15dip"
+            android:src="@drawable/dot_left_arrow" />
+
+        <ImageView
+            android:id="@+id/iv_dot_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/dotsIndicator"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="15dip"
+            android:src="@drawable/dot_right_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_blackboard_progressbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="12dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/progressbar_bg"
+            android:gravity="center_vertical"
+            android:max="100"
+            android:progressDrawable="@drawable/progress"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:text="小黑板准备中..."
+            android:textColor="#FFF"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_blackboard_zhezhao"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/color_transparency" 
+            android:contentDescription="@string/app_name"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_blackboard_mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/blackboard_mic_bg"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/blackboard_mic"
+            android:contentDescription="@string/app_name"
+            android:padding="1dip"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+</fm.dian.hdui.view.blackboard.BlackboardRelativeLayoutTop>

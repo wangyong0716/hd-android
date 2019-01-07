@@ -1,0 +1,71 @@
+<fm.dian.hdui.view.GestureLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gr_contianer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/chat_room_bg_color" >
+
+    <LinearLayout
+        android:id="@+id/ll_blackboard_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_stage_blackboard_video_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="130dip"
+                layout="@layout/layout_chat_room_stage" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_chat_room_video" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_chat_room_blackboard" />
+
+        </RelativeLayout>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_chat_activity_is_join_tip" />
+
+       <include
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            layout="@layout/item_chat_activity_recording" />
+
+       <ListView
+            android:id="@+id/mListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/chat_room_bg_color"
+            android:cacheColorHint="@color/color_transparency"
+            android:divider="@null"
+            android:overScrollMode="always"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"/>
+
+    </LinearLayout>
+
+    <!-- 聊天输入框 -->
+
+    <include
+        android:id="@+id/include_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/layout_chat_room_bottom_bar" />
+
+</fm.dian.hdui.view.GestureLinearLayout>

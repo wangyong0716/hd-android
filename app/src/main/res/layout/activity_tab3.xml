@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fm.dian.hdui.view.pullllayout.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab3_bg_color" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_user"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab3_item1_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/item_top_bottom_full_line_selector"
+            android:gravity="center_vertical" >
+
+            <fm.dian.hdui.view.RoundAngleImageView
+                android:id="@+id/iv_user_icon"
+                android:layout_width="@dimen/tab3_item1_user_icon_height"
+                android:layout_height="@dimen/tab3_item1_user_icon_height"
+                android:layout_marginLeft="@dimen/tab3_margin_left"
+                android:clickable="false"
+                android:focusable="false"
+                android:adjustViewBounds="true"
+                android:background="@drawable/default_image_load_fail_user"
+                android:gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image_load_fail_user"
+                app:roundHeight="8dp"
+                app:roundWidth="8dp" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tab3_margin_left"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/iv_user_icon"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/tab1_list_item_room_name_text_color"
+                android:textSize="16sp"  />
+
+            <TextView
+                android:id="@+id/tv_user_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_below="@id/tv_user_name"
+                android:layout_marginLeft="@dimen/tab3_margin_left"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/iv_user_icon"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:textColor="@color/tab3_user_des_text_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_item1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tab3_item2_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/item_top_bottom_full_line_selector" >
+
+            <ImageView
+                android:id="@+id/iv_item1_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tab3_margin_left"
+                android:background="@drawable/app_setting_bg"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"/>
+
+            <TextView
+                android:id="@+id/tv_item1_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tab3_margin_left"
+                android:layout_toRightOf="@id/iv_item1_icon"
+                android:layout_centerVertical="true"
+                android:text="@string/settings"
+                android:textSize="14sp"
+                android:textColor="@color/tab3_user_name_text_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</fm.dian.hdui.view.pullllayout.PullRefreshLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fm.dian.hdui.view.video.VideoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_video"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/rl_video_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <!--<GLSurfaceView-->
+        <!--android:id="@+id/videoView"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent" />-->
+
+        <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="0.0000001dp"
+            android:layout_height="0.0000001dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_video_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/chat_room_gl_stage_bg_color"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/mProgressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/progressbar"
+                android:indeterminateOnly="true" />
+
+            <include
+                android:id="@+id/mUserIcon"
+                layout="@layout/item_chat_activity_stage_image_adapter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/tv_loading_msg"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mUserIcon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:gravity="center_horizontal"
+                android:text="摄像头直播中收听模式"
+                android:textColor="@color/color_white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/localVideoTool"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dip"
+                android:paddingBottom="60dip"
+                android:src="@drawable/video_icon_light" />
+
+            <ImageView
+                android:id="@+id/changeCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dip"
+                android:paddingBottom="10dip"
+                android:src="@drawable/video_icon_change_camera" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remoteVideoTool"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_video_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dip"
+                android:paddingBottom="10dip"
+                android:src="@drawable/video_icon_stop_picture"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/waitingVideoProgressBar"
+            layout="@layout/waiting_ideo_first_frame_come_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+</fm.dian.hdui.view.video.VideoRelativeLayout>

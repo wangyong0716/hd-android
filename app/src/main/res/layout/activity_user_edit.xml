@@ -1,0 +1,349 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F0">
+    
+    <RelativeLayout 
+        android:id="@+id/bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/action_bar_bg_color">
+	    <ImageButton
+	        android:id="@+id/back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true" 
+	        android:background="@drawable/btn_back_bg_selector" 
+	        android:onClick="back"/>
+	    
+	    <View 
+	        android:id="@+id/divider"
+	        android:layout_width="1dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/activity_action_bar_divider_padding"
+	        android:layout_marginBottom="@dimen/activity_action_bar_divider_padding"
+	        android:layout_marginRight="@dimen/activity_common_padding"
+	        android:background="@color/action_bar_vertical_divider"
+	        android:layout_toRightOf="@id/back"
+	        android:layout_alignTop="@id/back"
+	        android:layout_alignBottom="@id/back"
+	        />
+	    
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="个人中心"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/room_name_size" 
+	        android:layout_toRightOf="@id/divider"
+	        android:layout_alignTop="@id/back"
+	        android:layout_alignBottom="@id/back"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        />
+	    
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_below="@id/bar"
+    	android:scrollbars="none"
+        >
+        <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:paddingBottom="16dp"
+            >
+		    
+            <RelativeLayout 
+		        android:id="@+id/r1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp"
+		        android:layout_marginBottom="20dp"
+		        >
+		        
+		        <ImageView 
+		            android:id="@+id/userAvatar2"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:adjustViewBounds="true"
+		            android:scaleType="centerCrop"
+		            android:layout_centerInParent="true"
+		            android:src="@drawable/default_image_load_fail_user"
+		            android:visibility="invisible"
+		            />
+			    
+		        <fm.dian.hdui.view.RoundAngleImageView 
+		            android:id="@+id/userAvatar"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:adjustViewBounds="true"
+		            android:scaleType="centerCrop"
+		            app:roundWidth="8dp"
+					app:roundHeight="8dp"
+		            android:src="@drawable/default_image_load_fail_user"
+		            android:layout_alignTop="@id/userAvatar2"
+		            android:layout_alignBottom="@id/userAvatar2"
+		            android:layout_alignLeft="@id/userAvatar2"
+		            android:layout_alignRight="@id/userAvatar2"
+		            />
+			    
+		        <fm.dian.hdui.view.RoundAngleImageView 
+		            android:id="@+id/userAvatar3"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:adjustViewBounds="true"
+		            android:scaleType="centerCrop"
+		            app:roundWidth="8dp"
+					app:roundHeight="8dp"
+		            android:layout_alignTop="@id/userAvatar"
+		            android:layout_alignBottom="@id/userAvatar"
+		            android:layout_alignLeft="@id/userAvatar"
+		            android:layout_alignRight="@id/userAvatar"
+				    android:background="@drawable/room_follow_btn_bg_selector"
+				    android:onClick="userAvatar"
+		            />
+		    </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_item2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="userName"
+                android:minHeight="@dimen/tab3_item2_height"
+                android:background="@drawable/item_top_line"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_item2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="姓名"
+                    android:textSize="@dimen/room_name_size"
+                    android:textColor="#474747"/>
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="男"
+                    android:padding="8dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dip"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:textColor="#989898"/>
+            </RelativeLayout>
+
+		    <!--<RelativeLayout -->
+			    <!--android:layout_width="match_parent"-->
+			    <!--android:layout_height="wrap_content"-->
+			    <!--android:background="@color/color_white"-->
+			    <!-->-->
+			    <!---->
+				<!--<View -->
+					<!--android:layout_width="match_parent"-->
+					<!--android:layout_height="1px"-->
+					<!--android:background="#c8c7cc"-->
+					<!--/>-->
+		        
+			    <!--<RelativeLayout -->
+			        <!--android:id="@+id/r12"-->
+		            <!--android:layout_width="match_parent"-->
+		            <!--android:layout_height="wrap_content"-->
+			        <!-->-->
+			    <!---->
+			        <!--<TextView-->
+			            <!--android:id="@+id/t12"-->
+			            <!--android:layout_width="wrap_content"-->
+			            <!--android:layout_height="wrap_content"-->
+			            <!--android:text="姓名"-->
+			            <!--android:textColor="#474747"-->
+			            <!--android:textSize="@dimen/room_name_size" -->
+				        <!--android:layout_marginTop="14dp"-->
+				        <!--android:layout_marginLeft="16dp"-->
+				        <!--/>-->
+			        <!---->
+			        <!--<TextView-->
+			            <!--android:id="@+id/userName"-->
+			            <!--android:layout_width="wrap_content"-->
+			            <!--android:layout_height="wrap_content"-->
+			            <!--android:gravity="right"-->
+			            <!--android:text="@string/app_name"-->
+			            <!--android:textColor="#989898"-->
+			            <!--android:textSize="@dimen/room_name_size" -->
+				        <!--android:layout_alignTop="@id/t12"-->
+				        <!--android:layout_toRightOf="@id/t12"-->
+				        <!--android:layout_marginRight="18dp"-->
+				        <!--android:layout_marginLeft="18dp"-->
+				        <!--android:layout_alignParentRight="true"-->
+				        <!--/>-->
+			        <!--<View -->
+			            <!--android:id="@+id/v122"-->
+					    <!--android:layout_width="match_parent"-->
+					    <!--android:layout_height="1px"-->
+					    <!--android:visibility="invisible"-->
+					    <!--android:layout_marginTop="14dp"-->
+					    <!--android:layout_below="@id/userName"-->
+				        <!--/>-->
+			        <!--<Button -->
+					    <!--android:layout_width="match_parent"-->
+					    <!--android:layout_height="match_parent"-->
+					    <!--android:background="@drawable/room_follow_btn_bg_selector"-->
+					    <!--android:layout_alignBottom="@id/v122"-->
+					    <!--android:layout_marginLeft="12dp"-->
+					    <!--android:layout_marginRight="12dp"-->
+					    <!--android:onClick="userName"-->
+					    <!--/>-->
+		        <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/rl_item3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="userGender"
+                android:minHeight="@dimen/tab3_item2_height"
+                android:background="@drawable/item_bottom_line"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_item3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="性别"
+                    android:textSize="@dimen/room_name_size"
+                    android:textColor="#474747"/>
+
+                <TextView
+                    android:id="@+id/userGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="男"
+                    android:padding="5dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dip"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:textColor="#989898"/>
+            </RelativeLayout>
+
+			    <!--<RelativeLayout -->
+			        <!--android:id="@+id/r2"-->
+		            <!--android:layout_width="match_parent"-->
+		            <!--android:layout_height="wrap_content"-->
+		            <!--android:layout_below="@+id/r12"-->
+			        <!-->-->
+			    	<!--<View -->
+			            <!--android:id="@+id/v15"-->
+					    <!--android:layout_width="match_parent"-->
+					    <!--android:layout_height="1px"-->
+					    <!--android:layout_marginLeft="12dp"-->
+					    <!--android:layout_marginRight="12dp"-->
+					    <!--android:background="#c8c7cc"-->
+				        <!--/>-->
+			        <!--<TextView-->
+			            <!--android:id="@+id/t2"-->
+			            <!--android:layout_width="wrap_content"-->
+			            <!--android:layout_height="wrap_content"-->
+			            <!--android:text="性别"-->
+			            <!--android:textColor="#474747"-->
+			            <!--android:textSize="@dimen/room_name_size" -->
+				        <!--android:layout_marginTop="14dp"-->
+				        <!--android:layout_marginLeft="16dp"-->
+				        <!--/>-->
+			        <!---->
+			        <!--<TextView-->
+			            <!--android:id="@+id/userGender"-->
+			            <!--android:layout_width="wrap_content"-->
+			            <!--android:layout_height="wrap_content"-->
+			            <!--android:gravity="right"-->
+			            <!--android:text="男"-->
+			            <!--android:textColor="#989898"-->
+			            <!--android:textSize="@dimen/room_name_size" -->
+				        <!--android:layout_alignTop="@id/t2"-->
+				        <!--android:layout_toRightOf="@id/t2"-->
+				        <!--android:layout_marginRight="18dp"-->
+				        <!--android:layout_marginLeft="18dp"-->
+				        <!--android:layout_alignParentRight="true"-->
+				        <!--/>-->
+			        <!--<View -->
+			            <!--android:id="@+id/v222"-->
+					    <!--android:layout_width="match_parent"-->
+					    <!--android:layout_height="1px"-->
+					    <!--android:visibility="invisible"-->
+					    <!--android:layout_marginTop="14dp"-->
+					    <!--android:layout_below="@id/userGender"-->
+				        <!--/>-->
+			        <!--<Button -->
+					    <!--android:layout_width="match_parent"-->
+					    <!--android:layout_height="match_parent"-->
+					    <!--android:background="@drawable/room_follow_btn_bg_selector"-->
+					    <!--android:layout_alignBottom="@id/v222"-->
+					    <!--android:layout_marginLeft="12dp"-->
+					    <!--android:layout_marginRight="12dp"-->
+					    <!--android:onClick="userGender"-->
+					    <!--/>-->
+		        <!--</RelativeLayout>-->
+		        <!--<View -->
+				    <!--android:layout_width="match_parent"-->
+				    <!--android:layout_height="1px"-->
+				    <!--android:background="#c8c7cc"-->
+				    <!--android:layout_below="@id/r2"-->
+			        <!--/>-->
+		        <!---->
+		    <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/rl_item4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:onClick="signature"
+                android:minHeight="@dimen/tab3_item2_height"
+                android:background="@drawable/item_top_line"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_item4_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:text="个性签名"
+                    android:textSize="@dimen/room_name_size"
+                    android:textColor="#474747"/>
+
+                <TextView
+                    android:id="@+id/signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:paddingTop="5dip"
+                    android:text="发的发放范德萨发大厦"
+                    android:layout_toRightOf="@id/tv_item4_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dip"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:textColor="#989898"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+    </ScrollView>    
+	
+</RelativeLayout>

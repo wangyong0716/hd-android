@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="test">10dp</dimen>
+<!--     <dimen name="bottom_tab_padding_up">6dip</dimen> -->
+
+    <!-- #################################################################################### -->
+    <dimen name="face_height">22dp</dimen>
+
+</resources>

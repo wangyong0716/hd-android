@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tab3_item_bg_selector"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_pic"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="6dip"
+            android:gravity="center_vertical">
+
+            <fm.dian.hdui.view.RoundAngleImageView
+                android:id="@+id/iv_room_icon"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:roundHeight="8dp"
+                app:roundWidth="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/iv_room_online_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="3dip"
+            android:textColor="@color/tab1_list_item_room_online_number_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_room_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@id/iv_room_online_num"
+            android:background="@drawable/drawable_color_red"
+            android:textColor="@color/color_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="3dip"
+            android:layout_toLeftOf="@id/tv_room_state"
+            android:layout_toRightOf="@id/ll_pic"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/tab1_list_item_room_name_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_room_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_room_name"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="3dip"
+            android:layout_toRightOf="@id/ll_pic"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLength="45"
+            android:maxLines="2"
+            android:textColor="@color/tab1_list_item_room_describe_text_color"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_child_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#ececec" />
+
+        <include layout="@layout/item_channel_activity_type2" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#ececec" />
+
+        <include layout="@layout/item_channel_activity_type2" />
+
+    </LinearLayout>
+</LinearLayout>
